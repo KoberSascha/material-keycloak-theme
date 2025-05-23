@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('fonts/STIX_Two/STIXTwoText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/*change here*/
+
+:root {
+    --mdc-theme-primary: #000 !important;
+    --mdc-theme-secondary: var(--mdc-theme-primary) !important;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: var(--mdc-theme-primary);
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: #b00020;
+}
+
+.mdc-floating-label.mdc-floating-label--float-above {
+    color: var(--mdc-theme-primary) !important;
+}
+
+
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1,
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'STIX Two Text', sans-serif;
+}
+
+
+h1 {
+  font-size: 48px;
+ 
+  font-weight: 700;
+  line-height: 1.5;
+}
+/* customize*/
+
+body {
+    background: #f5f3ea;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.card {
+  margin-top:35px;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background-color: rgb(255 255 255);
+  border-radius: 16px;
+  padding:15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+button,
+a {
+    font-size: 12.25px !important;
+}
+
+.title {
+
+
+
+    margin-bottom: 15px;
+}
+
+/* without this, the fields all expand
+   when the MDC JavaScript is run. */
+.mdc-text-field {
+    margin-top: 16px;
+}
+
+#kc-header,
+#kc-content,
+#kc-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+    width: 90%;
+}
+
+#kc-header {
+    width: 90%;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+    margin-top: 7%;
+    color: rgb(68, 68, 68);
+}
+
+
+
+#kc-reset-password-form #kc-form-options {
+    float: left;
+}
+
+#kc-reset-password-form #kc-form-buttons {
+    float: right;
+}
+
+#kc-register-form #kc-form-options {
+    float: left;
+}
+
+#kc-register-form #kc-form-buttons {
+    float: right;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+
+
+.mdc-text-field {
+    width: 100%;
+}
+
+#kc-form-login #kc-form-options {
+    margin-top: 15px;
+}
+
+#kc-login {
+    float: right;
+}
+
+#kc-error-message p {
+    margin: 0;
+}
+
+.remember-me-checkbox {
+    float: left;
+}
+
+.register .register-field {
+    margin-bottom: 15px;
+}
+
+.register .register-button-container {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.reset-password .reset-password-field {
+    margin-bottom: 15px;
+}
+
+.update-password .update-password-field {
+    margin-bottom: 15px;
+}
+
+.update-password .update-password-button-container {
+    margin-top: 20px;
+}
+
+.config-totp .config-totp-button-container {
+    margin-top: 15px;
+}
+
+.totp .totp-button-container {
+    margin-top: 15px;
+}
+
+.update-profile .update-profile-field {
+    margin-top: 15px;
+}
+
+.update-profile .update-profile-button-container {
+    margin-top: 20px;
+}
+
+.template .language-picker {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 195px;
+}
+
+.template .language-picker .language-icon {
+    float: left;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.template .language-picker .mdc-select {
+    float: right;
+    margin-top: -25px;
+}
+
+.template .language-picker .mdc-select option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+
+#kc-locale {
+    margin-top: 20px;
+}
+
+
+.d-none {
+    display: none;
+}
+
+.div-logo {
+    display: flex;
+    align-content: center;
+    justify-items: baseline;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+
+    width: 50px;
+    height:50px;
+}
+
+.logo-bg {
+    background-image: url('../img/logo.png');
+    /* Update the path */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.container-main {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    height: 100%
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+
+.left,
+.right {
+    width: 50%
+}
+
+.left {
+    float: left;
+
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.left h1 {
+    margin-bottom: 35px;
+    margin-top: 0px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.left .sublink span {
+    float: unset;
+}
+
+
+.right {
+
+    float: right;
+    height: 100%;
+
+}
+
+.right-custom-content {
+
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.right-customer-content-bg {
+    background-image: url('../img/background.png');
+    /* Update the path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-picker .mdc-select {
+    width: 100px;
+}
+
+.mdc-select__native-control {
+    text-indent: 0 !important;
+}
+
+
+.language-icon {
+    transform: translateY(8px);
+}
+
+@media only screen and (max-width: 767px) {
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 0%;
+    }
+}
