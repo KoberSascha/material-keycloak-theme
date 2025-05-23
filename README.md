@@ -2,7 +2,7 @@
 A Keycloak theme based on Material Design and Repository [material-keycloak-theme](https://github.com/MAXIMUS-DeltaWare/material-keycloak-theme/tree/master) by MAXIMUS-DeltaWare
 
 <img src="./screenshots/screenshot_login.png">
-<img src="./screenshots/screenshot_login.png">
+<img src="./screenshots/screenshot_register.png">
 
 
 ## Overview
